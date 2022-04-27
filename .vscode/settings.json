@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible.json#/definitions/tasks": "file:///Users/hp/Desktop/Ansible-LAMP-Stack/roles/lamp/tasks/main.yaml"
+    }
+}
