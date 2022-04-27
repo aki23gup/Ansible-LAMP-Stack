@@ -1,13 +1,11 @@
 ---
-       - name: Checking a simple command
-         command: "whoami"
-
        - name: install Apache 
          apt: 
            name: apache2, php7.4 , php-mysql, libapache2-mod-php 
            state: present 
-        
-       - name: Change ownership of foler
+         become: yes
+
+       - name: Change ownership of folder
          ansible.builtin.file:
                  path: /var/www/html
                  state: directory
@@ -24,4 +22,5 @@
          ansible.builtin.service:
                 name: apache2
                 state: restarted
+         become: yes
 
